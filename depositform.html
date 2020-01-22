@@ -1,0 +1,34 @@
+<html>
+<head>
+<script>
+function fun()
+{
+  if(document.getElementById("a1").value===document.getElementById("a2").value)
+  return true;
+  else
+  {
+  alert("Passwords entered do not match re enter the passwords");
+  window.location.assign("Samform.html");
+  return false;
+  }
+}
+</script>
+</head>
+<body>
+<form action="deposit.php" method="post" onsubmit="return fun()" />
+<b>Username<b>  <input type="text" placeholder="Username" name="f1" required />
+<br>
+<br>
+<b>Amount<b>  <input type="number" placeholder="Amount" name="f3" />
+<br>
+<br>
+<b>Password<b>  <input type="password" id="a1" placeholder="Password" name="f2" required />
+<br>
+<br>
+<b>Retype Password<b>  <input type="Password" id="a2" placeholder="Password" required />
+<br>
+<br>
+<input type="submit" value="deposit"  />
+</form>
+</body>
+</html>
